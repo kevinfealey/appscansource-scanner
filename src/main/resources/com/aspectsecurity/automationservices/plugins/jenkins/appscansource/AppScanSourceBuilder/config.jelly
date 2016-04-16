@@ -1,0 +1,34 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <!--
+    This jelly script is used for per-project configuration.
+
+    See global.jelly for a general discussion about jelly script.
+  -->
+
+  <!--
+    Creates a text field that shows the value of the "name" property.
+    When submitted, it will be passed to the corresponding constructor parameter.
+  -->
+
+    <f:entry field="installation" title="AppScan Source installation">
+        <f:select/>
+    </f:entry>
+    			        
+	<f:entry field="disableScan" title="Disable Scan">
+		<f:checkbox default="false" value="${it.disableScan}" />
+	</f:entry>
+	
+	<f:entry field="acceptSSL" title="Accept SSL Errors">
+		<f:checkbox default="false" value="${it.acceptSSL}" />
+	</f:entry>
+	
+	<f:entry title="Scan Workspace Directory" field="scanWorkspace">
+		<f:textbox value="${it.scanWorkspace}" />
+	</f:entry>
+	
+	<f:entry title="Application File" field="applicationFile">
+		<f:textbox value="${it.applicationFile}" />
+	</f:entry>
+
+</j:jelly>
