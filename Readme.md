@@ -6,6 +6,7 @@
 3. Source code and dependencies referenced in the AppScan Source artifacts on the Jenkins server
 4. AppScan Source login token
 
+###Generating a Login Token
 To generate an AppScan Source login token, execute the AppScan Source CLI, then log in with the following parameters:
 `AppScan Enterprise Server URL, AppScan Source username, AppScan Source password -persist [-acceptssl]`
 
@@ -22,7 +23,7 @@ http://www-01.ibm.com/support/knowledgecenter/SSS9LM_9.0.1/com.ibm.rational.apps
 1. From the Jenkins main page, select Manage Jenkins
 2. Select Manage Plugins
 3. Click "Advanced"
-4. Under Upload Plugin, choose the HPI file to upload, then click "Upload"
+4. Under Upload Plugin, choose the HPI file to upload (located in this project's "release" directory), then click "Upload"
 5. Restart Jenkins
 
 ###Configure Plugin:
