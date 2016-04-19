@@ -1,5 +1,9 @@
-#AppScan Source Plugin for Jenkins
-##This plugin requires:
+#AppScan Source Scanner Plugin for Jenkins
+
+##Project Description
+Configuring IBM Security AppScan Source scans in Jenkins can be time-consuming and error-prone when custom batch or shell scripts are used. This Jenkins plugin greatly simplifies the running of AppScan Source from Jenkins by providing centralized global settings and straight-forward input fields for scan configuration.
+
+##This plugin requires (Prerequisites):
 
 1. AppScan Source installed on the Jenkins Server
 2. AppScan Source application/project (PAF, PPF, etc.) artifacts on the Jenkins server
@@ -18,7 +22,7 @@ For additional information, please see IBM's documentation:
 http://www-01.ibm.com/support/knowledgecenter/SSS9LM_9.0.1/com.ibm.rational.appscansrc.utilities.doc/topics/command_line_interface_commands_login.html
 
 ##Plugin Use:
-###Install plugin:
+###Install plugin
 
 1. From the Jenkins main page, select Manage Jenkins
 2. Select Manage Plugins
@@ -26,7 +30,7 @@ http://www-01.ibm.com/support/knowledgecenter/SSS9LM_9.0.1/com.ibm.rational.apps
 4. Under Upload Plugin, choose the HPI file to upload (located in this project's "release" directory), then click "Upload"
 5. Restart Jenkins
 
-###Configure Plugin:
+###Configure Plugin
 
 1. From the Jenkins main page, select Manage Jenkins
 2. Select Configure System
@@ -38,7 +42,7 @@ http://www-01.ibm.com/support/knowledgecenter/SSS9LM_9.0.1/com.ibm.rational.apps
     2. Login Token File Path represents the location of the login token file generated above. This is the path on the Jenkins server.
 5. Click the "Save" button at the bottom of the page
 
-###Configure Job:
+###Configure Job
 
 1. Create a new job or access an existing job
 2. Select "Configure"
@@ -52,8 +56,8 @@ http://www-01.ibm.com/support/knowledgecenter/SSS9LM_9.0.1/com.ibm.rational.apps
 5. Click Save at the bottom
 6. Run the job.
 
-##Compatibility:
+##Compatibility
 This version of the plugin was tested with Jenkins 1.651.1 and IBM Security AppScan Source 9.0.3.  
 
-##Roadmap:
+##Roadmap
 The next step in the roadmap is to support automated publishing of scan results to AppScan Enterprise.
