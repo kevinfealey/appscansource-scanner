@@ -11,11 +11,11 @@
     <relativePath/>
   </parent>
   <groupId>com.aspectsecurity.automationservices.plugins.jenkins</groupId>
-  <artifactId>appscansource-scanner</artifactId>
+  <artifactId>ibm-security-appscansource-scanner</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
-  <name>AppScan Source Scanner</name>
+  <name>IBM Security AppScan Source Scanner</name>
   <url>https://wiki.jenkins-ci.org/display/JENKINS/TODO+Plugin</url>
   <licenses>
     <license>
