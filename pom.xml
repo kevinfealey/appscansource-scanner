@@ -11,7 +11,7 @@
     <relativePath/>
   </parent>
   <groupId>com.aspectsecurity.automationservices.plugins.jenkins</groupId>
-  <artifactId>appscansource-jenkins</artifactId>
+  <artifactId>appscansource-scanner</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
