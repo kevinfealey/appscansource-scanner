@@ -14,7 +14,7 @@ Configuring IBM Security AppScan Source scans in Jenkins can be time-consuming a
 To generate an AppScan Source login token, execute the AppScan Source CLI, then log in with the following parameters:
 `AppScan Enterprise Server URL, AppScan Source username, AppScan Source password -persist [-acceptssl]`
 
-ex. `AppScanSrcCli.exe http://localhost:9443/asc myHostname\administrator appScanSourcePassword! -persist -acceptssl`
+ex. `AppScanSrcCli.exe login http://localhost:9443/asc myHostname\administrator appScanSourcePassword! -persist -acceptssl`
 
 This will generate a file named ouncecli.token in the home directory of the user who executes the command.
 
