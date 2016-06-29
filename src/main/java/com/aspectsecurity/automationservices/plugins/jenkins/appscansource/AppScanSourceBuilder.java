@@ -181,16 +181,29 @@ public class AppScanSourceBuilder extends Builder implements SimpleBuildStep {
     	return false;
     }
     
-    public static boolean checkApplicationFileNameExists(String filePath){
-    	return new File(filePath).exists();
+    public boolean checkApplicationFileNameExists(String filePath) {
+    	try {
+    		return new FilePath(new File(filePath)).exists();
+    	} catch (IOException e) {
+    		logger.println(filePath + " could not be found. Cannot continue.");
+    	} catch (InterruptedException e) {
+    		logger.println("AppScan Source plugin thread interrupted.");
+    	}
+    	return false;
     }
     
     public boolean checkScanWorkspace(String jobScanWorkspace){
-    	File path = new File(jobScanWorkspace);
-    	if(!path.exists()){
-			logger.println("Scan Workspace does not exist.");
-			logger.println(path.getAbsolutePath());
-			return false;
+    	FilePath path = new FilePath(new File(jobScanWorkspace));
+    	try {
+			if(!path.exists()){
+				logger.println("Scan Workspace does not exist.");
+				logger.println(path.getRemote());
+				return false;
+			}
+		} catch (IOException e) {
+			logger.println(jobScanWorkspace + " could not be found. Cannot continue.");
+		} catch (InterruptedException e) {
+			logger.println("AppScan Source plugin thread interrupted.");
 		}
     	return true;
     }
