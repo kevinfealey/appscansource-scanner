@@ -11,7 +11,7 @@
   </parent>
   <groupId>com.aspectsecurity.automationservices.plugins.jenkins</groupId>
   <artifactId>ibm-security-appscansource-scanner</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.3</version>
   <packaging>hpi</packaging>
 
   <name>IBM Security AppScan Source Scanner</name>
@@ -35,7 +35,7 @@
     <connection>scm:git:ssh://git@github.com/jenkinsci/ibm-security-appscansource-scanner-plugin.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/jenkinsci/ibm-security-appscansource-scanner-plugin.git</developerConnection>
     <url>https://github.com/jenkinsci/ibm-security-appscansource-scanner-plugin</url>
-    <tag>HEAD</tag>
+    <tag>ibm-security-appscansource-scanner-1.0.3</tag>
   </scm>
 
   <repositories>
