@@ -1,3 +1,5 @@
+#This branch is not being actively maintained. Please use: https://github.com/jenkinsci/ibm-security-appscansource-scanner-plugin
+
 #AppScan Source Scanner Plugin for Jenkins
 
 ##Project Description
