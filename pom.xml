@@ -11,7 +11,7 @@
   </parent>
   <groupId>com.aspectsecurity.automationservices.plugins.jenkins</groupId>
   <artifactId>ibm-security-appscansource-scanner</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.4-SNAPSHOT</version>
   <packaging>hpi</packaging>
 
   <name>IBM Security AppScan Source Scanner</name>
