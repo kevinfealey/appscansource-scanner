@@ -3,6 +3,8 @@
 ##Project Description
 Configuring IBM Security AppScan Source scans in Jenkins can be time-consuming and error-prone when custom batch or shell scripts are used. This Jenkins plugin greatly simplifies the running of AppScan Source from Jenkins by providing centralized global settings and straight-forward input fields for scan configuration.
 
+Additional information about the plugin can be found here: https://wiki.jenkins-ci.org/display/JENKINS/IBM+AppScan+Source+Scanner+Plugin
+
 ##This plugin requires (Prerequisites):
 
 1. AppScan Source installed on the Jenkins Server
@@ -23,12 +25,16 @@ http://www-01.ibm.com/support/knowledgecenter/SSS9LM_9.0.1/com.ibm.rational.apps
 
 ##Plugin Use:
 ###Install plugin
+####Automatically
+The plugin is available to install from within the Jenkins Update Center, which is accessible through the Manage Jenkins menu of your Jenkins installation. If the plugin is not listed as an available plugin, please update your Jenkins installation.
 
+####Manually
 1. From the Jenkins main page, select Manage Jenkins
 2. Select Manage Plugins
 3. Click "Advanced"
 4. Under Upload Plugin, choose the HPI file to upload (located in this project's "release" directory), then click "Upload"
 5. Restart Jenkins
+
 
 ###Configure Plugin
 
